@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import StarsCanvas from "@/components/ui/StarsBg";
 
 const inter = Inter({ subsets: ["latin"] });
 
