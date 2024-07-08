@@ -1,9 +1,40 @@
 export const navItems = [
     { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
+
+  export const textTech = [
+    {
+      text: "This",
+    },
+    {
+      text: "website",
+    },
+    {
+      text: "was",
+    },
+    {
+      text: "build",
+    },
+    {
+      text: "using",
+      className: "text-cyan-400",
+    },
+    {
+      text: ":",
+      className: "text-cyan-400",
+    },
+  ]
+
+  export const textAbout = [
+    {
+      text: "About",
+    },
+    {
+      text: "Me",
+      className: "text-cyan-400",
+    },
+  ]
 
   export const gridItems = [
     {
