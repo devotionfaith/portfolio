@@ -7,7 +7,7 @@ import TechStack from "@/components/TechStack";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto overflow-clip sm:px-10">
       <div className="max-w-7xl w-full">
@@ -15,9 +15,11 @@ export default function Home() {
         <Hero />
         <TechStack />
         <Grid />
-        <Parallax/>
+        <Parallax />
         <Footer />
       </div>
     </main>
   );
-}
+};
+
+export default Home;
