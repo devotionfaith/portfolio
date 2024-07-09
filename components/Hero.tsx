@@ -7,7 +7,10 @@ import StarsCanvas from "./ui/StarsBg";
 import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => (
-  <div id="hero" className="flex my-20 pb-20 pt-32 z-30 relative flex-col gap-4 items-center justify-center">
+  <div
+    id="hero"
+    className="flex my-20 pb-20 pt-32 z-30 relative flex-col gap-4 items-center justify-center"
+  >
     <Spotlight
       className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
       fill="white"
@@ -23,7 +26,7 @@ const Hero = () => (
         words="Let's Build Something Amazing Together."
       />
       <p className="text-left md:tracking-wider text-blue-100 mb-1 text-sm md:text-lg lg:text-2xl">
-        Hi, I'&apos'm Gustian.
+        Hi, I&apos;m Gustian.
       </p>
       <p className="text-left md:tracking-wider text-blue-100 mb-2 text-sm md:text-lg lg:text-2xl">
         an Ambivert Developer based in Indonesia.
