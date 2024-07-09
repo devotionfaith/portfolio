@@ -5,10 +5,11 @@ import { FooterGlobe } from "./ui/FooterGlobe";
 const Footer = () => {
   return (
     <footer
-      className="w-full relative -mt-80 px-10 lg:mt-24 lg:pt-10 pb-4 z-30"
+      className="w-full relative px-10 lg:mt-24 lg:pt-10 pb-4 z-30"
       id="contact"
     >
       <div className="flex flex-col lg:px-60 items-center">
+        <FooterGlobe />
         <h1 className="heading lg:max-w-[45vw]">
           Let&apos;s stay <span className="text-purple">connected!</span> Follow
           me and stay in touch with me
