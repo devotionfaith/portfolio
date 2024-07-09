@@ -9,7 +9,6 @@ const Footer = () => {
       id="contact"
     >
       <div className="flex flex-col lg:px-60 items-center">
-        <FooterGlobe />
         <h1 className="heading lg:max-w-[45vw]">
           Let&apos;s stay <span className="text-purple">connected!</span> Follow
           me and stay in touch with me
