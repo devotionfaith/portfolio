@@ -1,15 +1,29 @@
+"use client"
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { gridItems, textAbout } from "../data/index.js";
 import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
+import { LampContainer } from "./ui/LampEffect";
+import { motion } from "framer-motion";
 
 const Grid = () => {
   return (
     <section id="about" className="mx-auto sm:px-20">
-      <div className="mt-1 mb-10 lg:mt-20 lg:mb-12 flex justify-center text-center text-4xl">
-        <TypewriterEffectSmooth words={textAbout} />
-      </div>
-      <BentoGrid className="w-full pb-20 relative z-30">
+      <LampContainer>
+        <motion.h1
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="mt-4 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        >
+         About Me
+        </motion.h1>
+      </LampContainer>
+      <BentoGrid className="w-full -mt-60 pb-20 relative z-30">
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={item.id}

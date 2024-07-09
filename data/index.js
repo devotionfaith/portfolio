@@ -1,7 +1,10 @@
 export const navItems = [
     { name: "About", link: "#about" },
+    { name: "Project", link: "#project" },
     { name: "Contact", link: "#contact" },
   ];
+
+export const words = ["Social-Media", "Instagram", "LinkedIn", "Github"];
 
 export const products = [
   {
@@ -12,7 +15,7 @@ export const products = [
   },
   {
     title: "Makan Cuy",
-    link: "#",
+    link: "https://github.com/devotionfaith/MakanCuy",
     thumbnail:
       "../project1.png",
   },
@@ -42,7 +45,7 @@ export const products = [
   },
   {
     title: "Makan Cuy",
-    link: "#",
+    link: "https://github.com/devotionfaith/MakanCuy",
     thumbnail:
       "../project1.png",
   },

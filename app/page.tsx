@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { Parallax } from "@/components/Parallax";
@@ -15,6 +16,7 @@ export default function Home() {
         <TechStack />
         <Grid />
         <Parallax/>
+        <Footer />
       </div>
     </main>
   );

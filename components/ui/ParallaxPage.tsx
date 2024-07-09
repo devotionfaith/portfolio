@@ -18,9 +18,10 @@ export const PageParallax = ({
     thumbnail: string;
   }[];
 }) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  const isMobile = window.innerWidth <= 768;
+  const firstRow = products.slice(0, isMobile ? 2 : 5);
+  const secondRow = products.slice(isMobile ? 1 : 5, isMobile ? 3 : 10);
+  const thirdRow = products.slice(isMobile ? 2 : 10, isMobile ? 4 : 15);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -56,7 +57,7 @@ export const PageParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-10 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-10 antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-30"
     >
       <Header />
       <motion.div
@@ -104,10 +105,12 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        Some Things<br /> I Have Done
+        Some Things
+        <br /> I Have Done
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        I have done several things, but of course we still have a long way to go and we can still do other things, can't wait for that.
+        I have done several things, but of course we still have a long way to go
+        and we can still do other things, can't wait for that.
       </p>
     </div>
   );
@@ -124,6 +127,7 @@ export const ProductCard = ({
   };
   translate: MotionValue<number>;
 }) => {
+  const hasLink = product.link !== "#";
   return (
     <motion.div
       style={{
@@ -133,21 +137,33 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 w-[30rem] relative  flex-shrink-0 z-30 "
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
+      <div
+        className={`block group-hover/product:shadow-2xl ${hasLink ? "" : ""}`}
       >
-        <img
-          src={product.thumbnail}
-          height="600"
-          width="1200"
-          className="object-contain absolute h-full w-full inset-0"
-          alt={product.title}
-        />
-      </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+        {hasLink ? (
+          <Link href={product.link}>
+            <img
+              src={product.thumbnail}
+              height="600"
+              width="1200"
+              className="object-contain absolute h-full w-full inset-0"
+              alt={product.title}
+            />
+          </Link>
+        ) : (
+          <img
+            src={product.thumbnail}
+            height="600"
+            width="1200"
+            className="object-contain absolute h-full w-full inset-0"
+            alt={product.title}
+          />
+        )}
+      </div>
+
+      <div className="absolute inset-0 h-full w-full opacity-0  pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>
