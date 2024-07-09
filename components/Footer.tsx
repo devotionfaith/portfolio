@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="flex flex-col lg:px-60 items-center">
         <FooterGlobe/>
         <h1 className="heading lg:max-w-[45vw]">
-            Let's stay <span className="text-purple">connected!</span> Follow me and stay in touch with me
+            Let'&apos's stay <span className="text-purple">connected!</span> Follow me and stay in touch with me
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-        Feel free to reach out and connect with me through social media or drop me a message. Let's collaborate and create something amazing together!
+        Feel free to reach out and connect with me through social media or drop me a message. Let'&apos's collaborate and create something amazing together!
         </p>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (

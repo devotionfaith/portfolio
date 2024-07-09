@@ -23,7 +23,7 @@ const Hero = () => (
         words="Let's Build Something Amazing Together."
       />
       <p className="text-left md:tracking-wider text-blue-100 mb-1 text-sm md:text-lg lg:text-2xl">
-        Hi, I'm Gustian.
+        Hi, I'&apos'm Gustian.
       </p>
       <p className="text-left md:tracking-wider text-blue-100 mb-2 text-sm md:text-lg lg:text-2xl">
         an Ambivert Developer based in Indonesia.
