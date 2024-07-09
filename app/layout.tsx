@@ -7,8 +7,8 @@ import StarsCanvas from "@/components/ui/StarsBg";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gustian's Portfolio",
-  description: "A Simple Portfolio Website",
+  title: "Devotion",
+  description: "A Simple Website",
 };
 
 export default function RootLayout({
