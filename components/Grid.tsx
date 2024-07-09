@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Grid = () => {
   return (
-    <section id="about" className="mx-auto sm:px-20">
+    <section id="about" className="mx-auto">
       <LampContainer>
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
@@ -23,7 +23,7 @@ const Grid = () => {
          About Me
         </motion.h1>
       </LampContainer>
-      <BentoGrid className="w-full -mt-60 pb-20 relative z-30">
+      <BentoGrid className="w-full px-5 -mt-60 pb-20 relative z-30">
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={item.id}

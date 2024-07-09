@@ -30,7 +30,7 @@ const iconVariants = (duration: number) => ({
 
 const TechStack = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center">
+    <div id="technologies" className="w-full h-screen flex flex-col items-center justify-center">
       <div className="mb-14 text-center text-4xl">
       <TypewriterEffectSmooth words={textTech} />
       </div>
