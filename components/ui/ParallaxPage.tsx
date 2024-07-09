@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import {
   motion,
   useScroll,
@@ -18,10 +18,29 @@ export const PageParallax = ({
     thumbnail: string;
   }[];
 }) => {
-  const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Set initial state
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const firstRow = products.slice(0, isMobile ? 2 : 5);
   const secondRow = products.slice(isMobile ? 1 : 5, isMobile ? 3 : 10);
   const thirdRow = products.slice(isMobile ? 2 : 10, isMobile ? 4 : 15);
+
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -54,6 +73,7 @@ export const PageParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
