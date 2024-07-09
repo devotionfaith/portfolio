@@ -5,8 +5,8 @@ import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
 
 const Grid = () => {
   return (
-    <section id="about">
-      <div className="mt-20 mb-12 flex justify-center text-center text-4xl">
+    <section id="about" className="mx-auto sm:px-20">
+      <div className="mt-1 mb-10 lg:mt-20 lg:mb-12 flex justify-center text-center text-4xl">
         <TypewriterEffectSmooth words={textAbout} />
       </div>
       <BentoGrid className="w-full pb-20 relative z-30">
@@ -18,15 +18,15 @@ const Grid = () => {
             description={item.description}
             classNameData={(() => {
               if (i === 0) {
-                return "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]";
+                return "col-span-4 max-h-[30vh] lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]";
               } else if (i === 1) {
-                return "lg:col-span-2 md:col-span-3 md:row-span-4";
+                return "col-span-4 lg:col-span-2 md:col-span-3 md:row-span-4";
               } else if (i === 2) {
-                return "lg:col-span-2 md:col-span-3 md:row-span-2";
+                return "col-span-4 lg:col-span-2 md:col-span-3 md:row-span-2";
               } else if (i === 3) {
-                return "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]";
+                return "col-span-4 min-h-[60vh] lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]";
               } else if (i === 4) {
-                return "lg:col-span-2 md:col-span-3 md:row-span-2";
+                return "col-span-4 lg:col-span-2 md:col-span-3 md:row-span-2";
               } else {
                 return "";
               }
