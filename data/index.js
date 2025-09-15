@@ -69,6 +69,21 @@ export const products = [
     link: "jak.news",
     thumbnail: "../project6.png",
   },
+   {
+    title: "Matahati",
+    link: "gamematahati.com",
+    thumbnail: "../project4.png",
+  },
+  {
+    title: "Procurement Recommendation System",
+    link: "https://pindad-ahp.vercel.app/login",
+    thumbnail: "../project5.png",
+  },
+  {
+    title: "JakNews",
+    link: "jak.news",
+    thumbnail: "../project6.png",
+  },
 ];
 
 export const textTech = [
