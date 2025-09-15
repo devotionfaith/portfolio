@@ -1,11 +1,10 @@
-
 export const navItems = [
-    { name: "Hero", link: "#hero" },
-    { name: "Tech", link: "#technologies" },
-    { name: "About", link: "#about" },
-    { name: "Project", link: "#project" },
-    { name: "Contact", link: "#contact" },
-  ];
+  { name: "Hero", link: "#hero" },
+  { name: "Tech", link: "#technologies" },
+  { name: "About", link: "#about" },
+  { name: "Project", link: "#project" },
+  { name: "Contact", link: "#contact" },
+];
 
 export const words = ["Social-Media", "Instagram", "LinkedIn", "Github"];
 
@@ -13,56 +12,62 @@ export const products = [
   {
     title: "Terbang Aja",
     link: "https://linktr.ee/TerbangAja",
-    thumbnail:
-      "../project2.png",
+    thumbnail: "../project2.png",
   },
   {
     title: "Makan Cuy",
     link: "https://github.com/devotionfaith/MakanCuy",
-    thumbnail:
-      "../project1.png",
+    thumbnail: "../project1.png",
   },
   {
     title: "MeetSync",
     link: "#",
-    thumbnail:
-      "../project3.png",
-  },
-  {
-    title: "Matahati",
-    link: "gamematahati.com",
-    thumbnail:
-      "../project4.png",
-  },
-  {
-    title: "Procurement Recommendation System",
-    link: "https://pindad-ahp.vercel.app/login",
-    thumbnail:
-      "../project5.png",
-  },
-  {
-    title: "JakNews",
-    link: "jak.news",
-    thumbnail:
-      "../project6.png",
+    thumbnail: "../project3.png",
   },
   {
     title: "Makan Cuy",
     link: "https://github.com/devotionfaith/MakanCuy",
-    thumbnail:
-      "../project1.png",
+    thumbnail: "../project1.png",
   },
   {
     title: "Terbang Aja",
     link: "https://linktr.ee/TerbangAja",
-    thumbnail:
-      "../project2.png",
+    thumbnail: "../project2.png",
   },
   {
     title: "MeetSync",
     link: "#",
-    thumbnail:
-      "../project3.png",
+    thumbnail: "../project3.png",
+  },
+  {
+    title: "Matahati",
+    link: "gamematahati.com",
+    thumbnail: "../project4.png",
+  },
+  {
+    title: "Procurement Recommendation System",
+    link: "https://pindad-ahp.vercel.app/login",
+    thumbnail: "../project5.png",
+  },
+  {
+    title: "JakNews",
+    link: "jak.news",
+    thumbnail: "../project6.png",
+  },
+  {
+    title: "Matahati",
+    link: "gamematahati.com",
+    thumbnail: "../project4.png",
+  },
+  {
+    title: "Procurement Recommendation System",
+    link: "https://pindad-ahp.vercel.app/login",
+    thumbnail: "../project5.png",
+  },
+  {
+    title: "JakNews",
+    link: "jak.news",
+    thumbnail: "../project6.png",
   },
 ];
 
@@ -87,7 +92,7 @@ export const textTech = [
     text: ":",
     className: "text-cyan-400",
   },
-]
+];
 
 export const textAbout = [
   {
@@ -97,7 +102,7 @@ export const textAbout = [
     text: "Me",
     className: "text-cyan-400",
   },
-]
+];
 
 export const gridItems = [
   {
@@ -113,7 +118,8 @@ export const gridItems = [
   {
     id: 2,
     title: "That is a little story about me",
-    description: "I am an undergraduate student majoring in Informatics, currently on a journey of self-discovery and future planning. I thrive on challenges and am always eager to gain new experiences in various fields. I am resilient, enthusiastic, and never give up easily. I enjoy working in teams and always strive to be the best in whatever I do.",
+    description:
+      "I am an undergraduate student majoring in Informatics, currently on a journey of self-discovery and future planning. I thrive on challenges and am always eager to gain new experiences in various fields. I am resilient, enthusiastic, and never give up easily. I enjoy working in teams and always strive to be the best in whatever I do.",
     class: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full text-center",
@@ -200,23 +206,23 @@ export const content = [
         />
       </div>
     ),
-  }
+  },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/devotionfaith"
+    link: "https://github.com/devotionfaith",
   },
   {
     id: 2,
     img: "/ig.svg",
-    link:"https://www.instagram.com/rgustiann/"
+    link: "https://www.instagram.com/rgustiann/",
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/rizky-gustiantoro/"
+    link: "https://www.linkedin.com/in/rizky-gustiantoro/",
   },
 ];
