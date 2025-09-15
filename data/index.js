@@ -29,22 +29,22 @@ export const products = [
       "../project3.png",
   },
   {
-    title: "Terbang Aja",
-    link: "https://linktr.ee/TerbangAja",
+    title: "Matahati",
+    link: "gamematahati.com",
     thumbnail:
-      "../project2.png",
+      "../project4.png",
   },
   {
-    title: "MeetSync",
-    link: "#",
+    title: "Procurement Recommendation System",
+    link: "https://pindad-ahp.vercel.app/login",
     thumbnail:
-      "../project3.png",
+      "../project5.png",
   },
   {
-    title: "Terbang Aja",
-    link: "https://linktr.ee/TerbangAja",
+    title: "JakNews",
+    link: "jak.news",
     thumbnail:
-      "../project2.png",
+      "../project6.png",
   },
   {
     title: "Makan Cuy",
